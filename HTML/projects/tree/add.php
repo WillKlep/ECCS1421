@@ -57,6 +57,8 @@
 	mysqli_query($conn,"insert into `locationrestrictions` (`Restriction`,`LocationID`) values ('$restriction','$newIDLocation')");
 
 	// redirect to home - NOT
-	header('location:index.php');
+	if (isset($_SERVER["HTTP_REFERER"])) {
+        header("Location: " . $_SERVER["HTTP_REFERER"]);
+    }
  
 ?>
