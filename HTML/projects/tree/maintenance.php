@@ -34,8 +34,8 @@ $id=$_GET['id'];
   				<div class="card-body">
 				  <table class="table" border="1">
 								<thead>
-									<th scope="col">Date</th>
 									<th scope="col">Worker Name</th>
+									<th scope="col">Date</th>
 									<th scope="col">Description</th>
 									<th scope="col"></th>
 								</thead>
